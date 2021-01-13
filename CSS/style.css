@@ -607,8 +607,6 @@ header {
     .contact-container textarea {
         width: 70%;
         padding: 4vh;
-        background-color: transparent;
-        border: solid 1px #888;
     }
 
     .contact-container input {
@@ -641,62 +639,200 @@ header {
         width: 70vw;
         height: 45vh;
     }
+}
 
-    @media(min-width:1000px) and (orientation:landscape) {
+@media(min-width:1000px) and (orientation:landscape) {
 
-        .contact-container {
-            top: 10vh;
-            height: 90vh;
-        }
-
-        .formdetailsmap {
-            display: flex;
-            flex-direction: row;
-        }
-
-        .contact-container form {
-            width: 50%;
-        }
-
-        .contact-container input,
-        .contact-container button,
-        .contact-container textarea {
-            padding: 4vh;
-        }
-
-        .contact-container input {
-            height: 5vh;
-        }
-
-        .contact-container textarea {
-            height: 25vh;
-        }
-
-        .contact-container button {
-            height: 10vh;
-            padding: 2vh;
-            transition: 0.3s;
-        }
-
-        .contact-container button:hover {
-            background-color: black;
-        }
-
-        .details {
-            font-style: 3vh;
-            padding: 2vh;
-            width: 100%;
-            height: 20vh;
-        }
-
-        .details p {
-            padding: 1vh;
-            font-size: 2.5vh;
-        }
-
-        .contact-map iframe {
-            width: 40vw;
-            height: 40vh;
-        }
-
+    .contact-container {
+        top: 10vh;
+        height: 90vh;
     }
+
+    .formdetailsmap {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-container form {
+        width: 50%;
+    }
+
+    .contact-container input,
+    .contact-container button,
+    .contact-container textarea {
+        padding: 4vh;
+    }
+
+    .contact-container input {
+        height: 5vh;
+    }
+
+    .contact-container textarea {
+        height: 25vh;
+    }
+
+    .contact-container button {
+        height: 10vh;
+        padding: 2vh;
+        transition: 0.3s;
+    }
+
+    .contact-container button:hover {
+        transform: scale(1.1);
+    }
+
+    .details {
+        font-style: 3vh;
+        padding: 2vh;
+        width: 100%;
+        height: 20vh;
+    }
+
+    .details p {
+        padding: 1vh;
+        font-size: 2.5vh;
+    }
+
+    .contact-map iframe {
+        width: 40vw;
+        height: 40vh;
+    }
+}
+
+/*LOGOWANIE*/
+.sign-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 11vh;
+    background-color: rgb(27, 27, 27);
+    padding-bottom: 3vh;
+}
+
+.sign {
+    text-align: center;
+    padding-top: 5vh;
+}
+
+.sign-container h2 {
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    text-transform: uppercase;
+}
+
+.sign-container input,
+.sign-container button {
+    width: 80%;
+    margin: 1.5vh;
+    padding: 1vh;
+    background-color: transparent;
+    border: solid 1px #888;
+    color: white;
+}
+
+.sign-container input {
+    height: 5vh;
+}
+
+.sign-container button {
+    height: 6vh;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
+}
+
+.sign p {
+    color: white;
+    font-size: 2vh;
+}
+
+.sign form {
+    padding-top: 3vh;
+}
+
+@media(min-width:500px) and (orientation:landscape) {
+    .sign-container {
+        top: 13vh;
+        padding-bottom: 6vh;
+    }
+
+    .sign-container h2 {
+        font-size: 6vh;
+        margin-bottom: 2vh;
+    }
+
+    .sign-container input,
+    .sign-container button {
+        width: 70%;
+        padding: 4vh;
+    }
+
+    .sign-container input {
+        height: 5vh;
+    }
+
+    .sign-container button {
+        height: 10vh;
+        padding: 2vh;
+    }
+
+    .sign p {
+        font-size: 5vh;
+    }
+
+    .sign form {
+        padding-top: 7vh;
+    }
+
+    .sign {
+        padding-top: 7vh;
+    }
+}
+
+@media(min-width:1000px) and (orientation:landscape) {
+
+    .sign-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        top: 10vh;
+        height: 90vh;
+    }
+
+    .sign {
+        flex-basis: 50%;
+    }
+
+    .sign-container h2 {
+        font-size: 3vh;
+        margin-bottom: 2vh;
+    }
+
+    .sign p {
+        font-size: 2vh;
+    }
+
+
+
+    .sign-container input,
+    .sign-container button {
+        padding: 4vh;
+    }
+
+    .sign-container input {
+        height: 5vh;
+    }
+
+    .sign-container button {
+        height: 10vh;
+        padding: 2vh;
+        transition: 0.3s;
+    }
+
+    .sign-container button:hover {
+        transform: scale(1.1);
+    }
+}
